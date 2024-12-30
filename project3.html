@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projektas 3: Namų projektų valdymo sistema</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Namų projektų valdymo sistema</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Pradžia</a></li>
+                    <li><a href="project1.html">Oro sąlygų žemėlapis</a></li>
+                    <li><a href="project2.html">Mobilioji mitybos planų programėlė</a></li>
+                    <li style="background: MediumPurple;"><a style="color: black;" href="project3.html">Namų projektų sistema</a></li>
+                    <li><a href="project4.html">Viešbučio kambarių rezervacija</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Apie programą</h2>
+            <p>Prie sistemos prisijungiama duomenų bazės valdymo sistemos naudotojų paskyromis. Sistema realizuoja šias funkcijas: duomenų įvedimas, atnaujinimas, ištrynimas ir peržiūra. Jeigu naudotojas neturi teisių atlikti kurios nors funkcijos, sistema parodo klaidos pranešimą</p>
+            <h2>Sistemos variantas</h2>
+            <h3>Namo projektai</h3>
+            <p>Sistemą naudoja projektų klientai, projektų sudarymo komandos darbuotojai ir sistemos administratorius. Klientas gali peržiūrėti jam priklausančius projektus ir šių projektų duomenis. Projektų sudarymo komanda gali peržiūrėti, sukurti, redaguoti ir ištrinti projektus, tačiau brėžinius ir leidimus gali tik peržiūrėti. Sistemos administratorius gali atlikti visas duomenų valdymo funkcijas su visomis sistemos duomenų bazės lentelėmis.</p>
+
+            <h2>Duomenų bazės užklausos</h2>
+            <p>Kiekvienai programoje naudojamoje SQL užklausoje naudojami „prepared statements“ leidžiantys įvestas reikšmes naudoti kaip duomenis vietoj vykdomojo kodo, tai padeda išvengti SQL injekcijų pažeidžiamumą ir stiprina programos saugumą. Kiekvieną SQL užklausą, kurią vykdo naudotojas, sistema tikrina ar naudotojas turi teisės vykdyti šią komandą, jeigu vykdant komandą gaunamas klaidos pranešimas (naudotojas neturi teisių vykdyti komandą), rodomas klaidos pranešimas sistemoje ir naudotojas yra priverstas grįžti į pagrindinį puslapį.</p>
+
+            <h2>Programos veikimas</h2>
+
+            <div class="image-text">
+                <img style="width: 40%;" src="images/image21.png" alt="Example Image" class="img">
+                <p>„Index.php“ yra pradinis sistemos langas. Šį langą naudotojas naudoja prisijungti prie namų projektų valdymo sistemos.</p>
+            </div>
+
+            <div class="image-text">
+                <p>Paspaudus mygtuką „Prisijungti“ patenkama į pagrindinį sistemos puslapį „pagrindinis.php“. Iš šio lango galima pradėti vykdyti visas sistemos funkcijas.</p>
+                <img src="images/image22.png" alt="Example Image" class="img">
+            </div>
+
+            <h3>Namų projektų valdymas</h3>
+            <p>Prisijungęs sistemos naudotojas turintis teisę valdyti namo projektus gali: redaguoti esamą projektą, ištrinti esamą projektą ir sukurti naują projektą.</p>
+            <div class="image-text">
+                <img style="width: 30%;" src="images/image23.png" alt="Example Image" class="img">
+                <img style="width: 30%;" src="images/image24.png" alt="Example Image" class="img">
+                <img style="width: 40%;" src="images/image25.png" alt="Example Image" class="img">
+            </div>
+
+            <h3>Namų projektų planų valdymas</h3>
+            <p>Kiekvienas namo projektas turi projekto planą, autorizuotas sistemos naudotojas gali: redaguoti arba ištrinti namo planą, sukurti naują planą.</p>
+            <div class="image-text">
+                <img style="flex: 1;" src="images/image27.png" alt="Example Image" class="img">
+                <div style="flex: 2;">
+                    <img src="images/image26.png" alt="Example Image" class="img">
+                    <img src="images/image28.png" alt="Example Image" class="img">
+                </div>
+            </div>
+
+            <h3>Namų projektų leidimų valdymas</h3>
+            <p>Sistemos naudotojas kuris turi teisę valdyti leidimus gali: redaguoti leidimą, ištrinti leidimą ar pridėti naują leidimą.</p>
+            <div class="image-text">
+                <img style="flex: 1;" src="images/image210.png" alt="Example Image" class="img">
+                <div style="flex: 3;">
+                    <img src="images/image212.png" alt="Example Image" class="img">
+                    <img src="images/image29.png" alt="Example Image" class="img">
+                </div>
+            </div>
+         
+            <h2>Panaudotos technologijos</h2>
+            <div class="image-text">
+                <img style="width: 30%;" src="images/viesbuciuLogotipai.png" alt="Example Image" class="img">
+            </div>
+
+        </main>
+        <footer>
+            <p>Namų projektų valdymo sistema</p>
+            <p>Puslapį sukurė: Kauno technologijos universiteto studentas Paulius Alešiūnas.</p>
+        </footer>
+    </div>
+</body>
+</html>
